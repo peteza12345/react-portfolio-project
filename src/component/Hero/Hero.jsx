@@ -3,6 +3,7 @@ import styles from './Hero.module.css'
 import {FaGithub, FaSquareFacebook, FaEnvelope, FaLine} from "react-icons/fa6"
 import {TypeAnimation} from 'react-type-animation'
 import Tilt from 'react-parallax-tilt';
+import img1 from './Images/myphoto.jpg.jpg'
 
 function Hero() {
   return (
@@ -36,7 +37,7 @@ function Hero() {
                     </ul>
                 </div>
                 <Tilt scale={1.2} transitionSpeed={2500} tiltReverse={true}>
-                    <div className={styles.hero_img}></div>
+                    <div className={styles.hero_img}><img src={img1} alt="" /></div>
                 </Tilt>
             </div>
         </div>
